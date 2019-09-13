@@ -38,7 +38,7 @@ Vagrant.configure("2") do |config|
   # 
   # Mapeo de directorios que se comparten entre la maquina virtual y nuestro equipo. En este caso es
   # el propio directorio donde está el archivo  y el directorio "/vagrant" dentro de la maquina virtual.
-  config.vm.synced_folder "/vagrant"
+  config.vm.synced_folder ".","/vagrant"
 
 
   # Provider-specific configuration so you can fine-tune various
